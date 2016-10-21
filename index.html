@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        body,i{
+            font-size: 12px;
+            font-family:"\5B8B\4F53";
+            font-style: normal;
+        }
+        ul li{
+            list-style-type: none;
+        }
+        select,input,img{
+            vertical-align: middle;
+            outline: none;
+        }
+        a{
+            text-decoration: none;
+            color: #666;
+            outline: none;
+        }
+        .pink{
+            color: #ff6699;
+        }
+        .bolder{
+            font-weight: bolder;
+        }
+        .normal{
+            font-weight: normal;
+        }
+        .size{
+            font-size:14px;
+        }
+        .size1{
+            font-size:22px;
+        }
+        .size2{
+            font-size: 18px;
+        }
+        .size3{
+            font-size: 20px;
+        }
+        .size4{
+            font-size: 16px;
+        }
+        .top1{
+            margin-top:30px;
+        }
+        .gray{
+            color:#666;
+        }
+
+        a:hover{
+            color:darkred;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .clearfix{
+            clear:both;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        body{
+            height:4818px;
+            width:1200px;
+            margin:0 auto;
+        }
+        .header{
+            position: relative;
+            top:10px;
+            width:950px;
+            height:28px;
+        }
+        .header a{
+            height:20px;
+            border-right:1px dotted #ccc;
+            padding:0 20px;
+            line-height: 20px;
+            float:left;
+            color:#666;
+        }
+        .header a:hover{
+            color:darkred;
+        }
+        .header a:first-child:before{
+            content:url(img/1.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:2px;
+            left:-3px;
+        }
+        .header a:nth-child(2):before{
+            content:url(img/2.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:2px;
+            left:-3px;
+        }
+        .header a:nth-child(5){
+            padding-right: 25px;
+        }
+        .header a:nth-child(5):before{
+            content:url(img/3.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:2px;
+            left:-3px;
+        }
+        .header a:nth-child(5):after{
+            content:url(img/4.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:1px;
+            left:5px;
+        }
+        .header a:nth-child(6):before{
+            content:url(img/5.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:1px;
+            left:-3px;
+        }
+        .header a:nth-child(7):before{
+            content:url(img/6.jpg);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:1px;
+            left:-3px;
+        }
+        .header a:nth-child(8):before{
+            content:url(img/7.png);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:1px;
+            left:-3px;
+        }
+        .header a:nth-child(8):after{
+            content:url(img/8.jpg);
+            vertical-align: middle;
+            display: inline-block;
+            position: relative;
+            top:1px;
+            left:3px;
+        }
+        .header a:last-child{
+            border:none;
+        }
+        .hr{
+            border-top:1px solid #ccc;
+        }
+        .search{
+            width:550px;
+            height:80px;
+            margin:20px auto;
+        }
+        .search span:first-child{
+            color:white;
+            background: #ff6699;
+            padding:5px 10px;
+            cursor:pointer;
+        }
+        .search span:nth-child(2){
+            color:#666;
+            background:#f2f2f2;
+            padding:5px 10px;
+            cursor:pointer;
+        }
+        .search input{
+            width:450px;
+            height:28px;
+            border:2px solid #ff6699;
+            margin-top:3px;
+        }
+        .search img{
+            margin-top:3px;
+            margin-left:-7px;
+            cursor:pointer;
+        }
+        .pic1,.pic2{
+            margin-top:30px;
+        }
+        .nav li{
+            float:left;
+            margin:0px 20px;
+        }
+        .nav li a{
+            color:#666;
+            font-size:14px;
+            font-weight: bolder;
+        }
+        .nav li a:hover{
+            color:darkred;
+        }
+        .hr1{
+            margin-top:10px;
+            border-top:2px solid  #ff6699;
+        }
+        .sidebar{
+           width: 239px;
+            height:580px;
+            border-right:1px solid #ccc;
+            border-bottom:1px solid #ccc;
+            float:left;
+        }
+        .sidebar li{
+            width:200px;
+            height:115px;
+            line-height:25px;
+            border-bottom: 1px dotted #ccc;
+            margin-left:20px;
+        }
+        .sidebar li:last-child{
+            border-bottom: none;
+        }
+        .sidebar li p a:hover{
+            color:darkred;
+        }
+        .banner1{
+            margin-top:16px;
+            float: left;
+            margin-left: 1px;
+        }
+        .banner1 img{
+            margin-left:5px;
+        }
+        .hr3{
+            width:1000px;
+            margin-top:-3px;
+            border-top:1px solid #ccc;
+        }
+        .title{
+            margin-top:40px;
+        }
+        .top{
+            margin-top:70px;
+        }
+        .triangle:after{
+            content: url(img/24.png);
+            margin-left: 4px;
+            position: relative;
+            top:-1px;
+        }
+        .content1{
+            text-align: center;
+            margin-top:20px;
+        }
+        .content1 img{
+            width:183px;
+            height:227px;
+        }
+        .cont1{
+            width:224px;
+            height:400px;
+            float: left;
+            margin-left: 20px;
+        }
+        .cont2{
+            width:386px;
+            height:530px;
+            float:left;
+        }
+        .cont2 img{
+            width:386px;
+            height:386px;
+        }
+        .content2 .cont1:first-child{
+            margin-left:0px;
+        }
+        .cont1-1{
+            padding-top:10px;
+        }
+        .like:before{
+            content: url(img/26.jpg);
+            position: relative;
+            top:1px;
+            right:1px;
+        }
+        .tit{
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            padding-top: 10px;
+        }
+        .content2{
+            width:1200px;
+            height:400px;
+            margin-top:20px;
+        }
+        .content3{
+            width:1200px;
+            height:540px;
+            margin-top:20px;
+        }
+        .content3 .cont2~.cont2{
+            margin-left:21px;
+        }
+        .sub{
+            width:386px;
+            height:50px;
+            line-height:25px;
+            overflow: hidden;
+            padding-top:10px;
+        }
+        .tab{
+            width:386px;
+            height:24px;
+            background-image: url(img/37.png);
+            background-repeat: no-repeat;
+            background-position: 0 5px;
+            padding-top:10px;
+        }
+        .tab a{
+            color:#ff6699;
+            margin-left: 10px;
+        }
+        .tab a:first-child{
+            margin-left:40px;
+        }
+        .hr4{
+            width:1040px;
+        }
+        .subnav{
+            width:1200px;
+            height:40px;
+            text-align: center;
+        }
+        .subnav div{
+            display: inline-block;
+            margin:20px;
+            cursor: pointer;
+        }
+        .active{
+            border-bottom: 2px solid #ff6699;
+        }
+        .content4{
+            padding-top:20px;
+        }
+        .content4 a~a{
+            margin-left:15px;
+        }
+        .content5{
+            padding-top:25px;
+        }
+        .content5 .cont3~.cont3{
+            margin-left:21px;
+        }
+        .cont3{
+            width:386px;
+            height:430px;
+            text-align: center;
+            float:left;
+        }
+        .cont3-1{
+            padding-top:20px;
+            height:80px;
+            line-height: 26px;
+        }
+        #pic12{
+            display: none;
+        }
+        #pic22{
+            display: none;
+        }
+        #pic32{
+            display: none;
+        }
+        .hr5{
+            width:995px
+        }
+        .footer{
+            width:1200px;
+            height:313px;
+            background:#f5f5f5;
+            margin-top:-6px;
+        }
+        .footer1{
+            list-style: none;
+            color:#666;
+        }
+        .footer1 li{
+            float: left;
+            margin-left: 40px;
+            margin-top:30px;
+        }
+        .footer1 li:first-child{
+            width:138px;
+            height:75px;
+            line-height: 25px;
+            padding-left: 48px;
+            background: url(img/59.png) no-repeat;
+            margin-left:0px;
+        }
+        .footer1 li:nth-child(2),.footer1 li:nth-child(3),.footer1 li:nth-child(4),.footer1 li:nth-child(5){
+            width:115px;
+            height:120px;
+            line-height:25px;
+        }
+      .footer1 li:nth-child(6){
+          width:150px;
+          height:180px;
+      }
+      .footer2{
+          color:#666;
+          height:12px;
+          border-top:1px solid #ccc;
+          border-bottom:1px solid #ccc;
+          padding:7px 0px;
+      }
+        .footer2 li{
+            float:left;
+            padding-right:20px;
+        }
+        .footer3{
+            color:#666;
+            height:60px;
+            line-height: 25px;
+            margin-top:15px;
+        }
+        .last{
+            width:960px;
+            height:420px;
+            float: left;
+            position: relative;
+        }
+        .last1{
+          position: absolute;
+            top:360px;
+            left:398px;
+            cursor: pointer;
+        }
+        .last1 img{
+            padding:0px 8px;
+        }
+        .last2{
+            height:44px;
+            position: absolute;
+            top:188px;
+            width:960px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="header fr">
+    <a href="javascript:;">微信登录</a>
+    <a href="javascript:;">QQ登录</a>
+    <a href="javascript:;">登录</a>
+    <a href="javascript:;">注册</a>
+    <a href="javascript:;">我的购物车</a>
+    <a href="javascript:;">我的订单</a>
+    <a href="javascript:;">美丽说会员</a>
+    <a href="javascript:;">下载APP</a>
+    <a href="javascript:;">帮助中心</a>
+</div>
+<div class="clearfix"></div>
+<hr class="hr">
+<a href="javascript:;"><img src="img/10.png" alt="" class="fl pic1"></a>
+<a href="javascript:;"><img src="img/11.png" alt="" class="fr pic2"></a>
+<div class="search">
+    <span>宝贝</span>
+    <span>店铺</span>
+    <input type="text" placeholder="支持奥运之运动鞋买起来!">
+    <img src="img/9.png" alt="">
+</div>
+<ul class="nav">
+    <li><a href="" class="pink">首页</a></li>
+    <li><a href="">最热</a></li>
+    <li><a href="">上衣</a></li>
+    <li><a href="">裙子</a></li>
+    <li><a href="">裤子</a></li>
+    <li><a href="">鞋子</a></li>
+    <li><a href="">包包</a></li>
+    <li><a href="">配饰</a></li>
+    <li><a href="">内衣</a></li>
+    <li><a href="">美妆</a></li>
+    <li><a href="">男装</a></li>
+    <li><a href="">童装</a></li>
+    <li><a href="">家居</a></li>
+    <li><a href="">小家电</a></li>
+    <li><a href="">食品</a></li>
+</ul>
+<div class="clearfix"></div>
+<hr class="hr1">
+<ul class="sidebar">
+    <li>
+        <p>
+            <a href="javascript:;" class="bolder pink size">每日精选</a><br/>
+            <a href="javascript:;" class="pink">秋冬新品</a>
+            <a href="javascript:;"> 魅力性感</a>
+            <a href="" class="pink"> 毛呢外套</a><br/>
+            <a href="" class="pink">时尚套装</a>
+            <a href="">牛仔裤</a>
+            <a href="" class="pink">短靴</a><br/>
+            <a href="">运动鞋</a>
+            <a href="">热销零食</a>
+            <a href="" class="pink">韩货优选</a>
+        </p>
+    </li>
+    <li>
+        <p>
+            <a href="" class="bolder pink size">2015流行</a><br/>
+            <a href="">街头混搭</a>
+            <a href="" class="pink">极简风</a>
+            <a href="" >宽松直筒裙</a><br/>
+            <a href="" class="pink">中长款外套</a>
+            <a href="" class="pink">皮革</a>
+            <a href="" class="pink">鹿皮</a><br/>
+            <a href="" class="pink">动物纹</a>
+            <a href="">蝴蝶结</a>
+            <a href="" class="pink">流苏</a>
+            <a href="" >冰浅色</a>
+        </p>
+    </li>
+    <li>
+        <p>
+            <a href="" class="bolder pink size">时尚经典</a><br/>
+            <a href="">韩系</a>
+            <a href="" class="pink">小香风</a>
+            <a href="" >学院风</a>
+            <a href="" >条纹</a><br/>
+            <a href="" class="pink">千鸟格</a>
+            <a href="" class="pink">毛呢</a>
+            <a href="">针织</a>
+            <a href="" class="pink">黑色</a><br/>
+            <a href="" class="pink">灰色</a>
+            <a href="">中国红</a>
+            <a href="" class="pink">樱花粉</a>
+        </p>
+    </li>
+    <li>
+        <p>
+            <a href="" class="bolder pink size">实穿百搭</a><br/>
+            <a href="">呢大衣</a>
+            <a href="" class="pink">收腰棉衣</a>
+            <a href="" >廓型毛衣</a><br/>
+            <a href="" class="pink">针织开衫</a>
+            <a href="" class="pink">双排扣外套</a><br/>
+            <a href="" class="pink">针织背心裙</a>
+            <a href="">纯色打底裤</a>
+        </p>
+    </li>
+    <li>
+        <p>
+            <a href="javascript:;" class="bolder pink size">百变廓形</a><br/>
+            <a href="javascript:;">收腰</a>
+            <a href="javascript:;" class="pink">宽松</a>
+            <a href="javascript:;" >紧身</a>
+            <a href="javascript:;" >直筒</a>
+            <a href="javascript:;" >A字</a><br/>
+            <a href="javascript:;" class="pink">H型</a>
+            <a href="javascript:;" class="pink">X型</a>
+            <a href="javascript:;" >S型</a>
+            <a href="javascript:;" class="pink">T型</a>
+            <a href="javascript:;" >I型</a><br/>
+            <a href="javascript:;" class="pink">O型</a>
+            <a href="javascript:;">短款</a>
+            <a href="javascript:;" class="pink">长款</a>
+            <a href="javascript:;" class="pink">茧型</a>
+            <a href="javascript:;">阔口</a>
+        </p>
+    </li>
+</ul>
+<div class="banner">
+    <div class="last">
+    <img src="img/12.jpg" alt="">
+        <div class="last1">
+            <img src="img/66.png" alt="">
+            <img src="img/66.png" alt="">
+            <img src="img/65.png" alt="">
+            <img src="img/66.png" alt="">
+        </div>
+        <div class="last2">
+            <img src="img/67.jpg" alt="" class="fl">
+            <img src="img/68.jpg" alt="" class="fr">
+
+        </div>
+    </div>
+    <div class="banner1">
+    <a href="javascript:;"> <img src="img/13.jpg" alt=""></a>
+    <a href="javascript:;"> <img src="img/14.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/15.jpg" alt=""></a>
+    <a href="javascript:;"> <img src="img/16.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/17.jpg" alt=""></a>
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="title">
+    <span class="bolder size1 gray">正在流行</span> <span class="gray">流行元素 权威榜单</span>
+    <span class="fr triangle gray">往期回顾</span>
+    <hr class="hr3 fr">
+
+</div>
+<div class="clearfix"></div>
+<div class="content1">
+    <a href="javascript:;"><img src="img/18.png" alt=""></a>
+    <a href="javascript:;"><img src="img/19.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/20.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/21.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/22.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/23.png" alt=""></a>
+</div>
+<div class="title">
+    <span class="bolder size1 gray">新品精选</span> <span class="gray">尖货来袭 要你好看</span>
+    <span class="fr triangle gray">更多新品</span>
+    <hr class="hr3 fr">
+
+</div>
+<div class="clearfix"></div>
+<div class="content2">
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/25.jpg" alt=""></a>
+        <div class="cont1-1">
+        <span class="price fl pink bolder size2"><span class="normal">¥</span> 128.10</span><span class="like fr gray size">1</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+        <a href="javascript:;">2016夏季新款连体阔腿裤韩版宽松显瘦连体短裤</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/27.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 128.80</span><span class="like fr gray size">10</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">夏季新款小清新荷叶袖连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/28.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 109.20</span><span class="like fr gray size">100</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">韩国少女时代林允儿同款衬衫短袖连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/29.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 79.00</span><span class="like fr gray size">1000</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">夏装韩版新款收腰修身显瘦时尚印花百搭连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/30.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 96.00</span><span class="like fr gray size">10000</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">新款韩版显瘦明线马甲百褶伞裙裤套装</a>
+        </div>
+    </div>
+</div>
+<div class="content2">
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/31.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 142.20</span><span class="like fr gray size">333</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">两三事 怪力女票 夏季新品七分袖宽松T恤式连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/32.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 299.00</span><span class="like fr gray size">666</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">1313韩国 精简气质三件套装 9044+5280</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/33.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 204.90</span><span class="like fr gray size">1</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">特殊花纹蓝色蕾丝两件套连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/34.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 149.00</span><span class="like fr gray size">999</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">1313专属定制 一片式围裙绑带设计不规则半身裙 63201</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/35.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 89.00</span><span class="like fr gray size">111</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">中长款格子防晒纽扣衬衫</a>
+        </div>
+    </div>
+</div>
+<div class="title top">
+    <span class="bolder size1 gray">时尚美妆</span> <span class="gray">优选品牌 明星爆款</span>
+    <span class="fr triangle gray">更多美妆</span>
+    <hr class="hr3 fr">
+</div>
+<div class="clearfix"></div>
+<div class="content3">
+<div class="cont2">
+    <a href="javascript:;"><img src="img/36.jpg" alt=""></a>
+    <div class="cont1-1">
+    <span class="price pink bolder size3"><span class="normal">¥</span> 44.00</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class=" gray size"><s>¥ 95.00</s></span>
+    </div>
+    <br>
+    <a href="javascript:;" class="size4">悦诗风吟 绿茶精粹喷雾</a>
+    <div class="sub gray">
+        【秋冬里最滋润的保湿】秋风一吹，脸就会变成一片“大旱田”的妹子注意啦。这款喷雾，清爽的肤感，调节水油平衡的绿茶成分，喷一喷，给你的干燥肌淋一场及时雨。
+    </div>
+    <div class="tab">
+        <a href="javascript:;">护肤</a>
+        <a href="javascript:;">喷雾</a>
+        <a href="javascript:;">悦诗风吟</a>
+    </div>
+
+</div>
+    <div class="cont2">
+        <a href="javascript:;"><img src="img/38.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price pink bolder size3"><span class="normal">¥</span> 53.00</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class=" gray size"><s>¥ 130.00</s></span>
+        </div>
+        <br>
+        <a href="javascript:;" class="size4">Holika 弹力爽肤水</a>
+        <div class="sub gray">
+            【懒人挚爱三秒水】只要三秒钟，就挽救你的问题脸，简直让万千懒菇凉尖叫。面部有小细纹请找专补胶原蛋白的粉瓶，大干皮请约补水透明质酸的蓝瓶，小黑妞请呼VC多多能美白的橙瓶~
+        </div>
+        <div class="tab">
+            <a href="javascript:;">护肤</a>
+            <a href="javascript:;">化妆水</a>
+            <a href="javascript:;">Holika</a>
+        </div>
+
+    </div>
+    <div class="cont2">
+        <a href="javascript:;"><img src="img/39.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price pink bolder size3"><span class="normal">¥</span> 129.90</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span class=" gray size"><s>¥ 350.00</s></span>
+        </div>
+        <br>
+        <a href="javascript:;" class="size4">N°7保湿赋活冰淇淋面膜	</a>
+        <div class="sub gray">
+            【长的这么美味，怪我咯】吃货们最爱的一款面膜，几乎还原了冰淇淋的模样。当然，她中看也中用，萃取苹果精华及Vita-Complex，专业保湿收毛孔，效果杠杠的。
+        </div>
+        <div class="tab">
+            <a href="javascript:;">面膜</a>
+            <a href="javascript:;">保湿</a>
+            <a href="javascript:;">Boots N°7</a>
+        </div>
+
+    </div>
+</div>
+<div class="title">
+    <span class="bolder size1 gray">Hi范儿</span> <span class="gray">与潮流不期而遇</span>
+    <span class="fr triangle gray">查看更多</span>
+    <hr class="hr3 fr hr4">
+
+</div>
+<div class="clearfix"></div>
+<div class="subnav gray size2">
+    <div class="active pink">欧美</div>
+    <div>原创设计</div>
+    <div>日韩</div>
+    <div>甜美</div>
+</div>
+<div class="content4">
+    <a href="javascript:;"><img src="img/40.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/41.jpg" alt=""></a>
+    <a href="javascript:;"><img src="img/42.jpg" alt=""></a>
+</div>
+<div class="title">
+    <span class="bolder size1 gray">好店推荐</span> <span class="gray">店铺精选  品质保证</span>
+    <span class="fr triangle gray">更多好店</span>
+    <hr class="hr3 fr">
+
+</div>
+<div class="clearfix"></div>
+<div class="subnav gray size2">
+    <div class="active pink">魅力女装</div>
+    <div>时尚包包</div>
+    <div>潮流美鞋</div>
+    <div>必备小物</div>
+    <div>精品男装</div>
+</div>
+<div class="content5">
+    <div class="cont3">
+        <img src="img/43.jpg" alt="" id="pic11">
+        <img src="img/44.png" alt="" id="pic12">
+        <div class="cont3-1">
+        <a href="javascript:;" class="size1 bolder">艾格官方旗舰店</a><br>
+        <a href="javascript:;" >约会浪漫初夏</a><br>
+       <span class="bolder gray">销量</span> <span class="pink">116</span>&nbsp;&nbsp;<span class="bolder gray">评分</span> <span class="pink">4.7</span>
+        </div>
+
+    </div>
+    <div class="cont3">
+        <img src="img/45.jpg" alt="" id="pic21">
+        <img src="img/46.jpg" alt="" id="pic22">
+        <div class="cont3-1">
+            <a href="javascript:;" class="size1 bolder">cocobella旗舰店</a><br>
+            <a href="javascript:;" >高街时尚  拒绝撞衫 全场包邮</a><br>
+           <span class="bolder gray">销量</span> <span class="pink">23262</span>&nbsp;&nbsp;<span class="bolder gray">评分</span> <span class="pink">4.7</span>
+        </div>
+
+    </div>
+    <div class="cont3">
+        <img src="img/47.jpg" alt="" id="pic31">
+        <img src="img/48.jpg" alt="" id="pic32">
+        <div class="cont3-1">
+            <a href="javascript:;" class="size1 bolder">1313气场女装</a><br>
+            <a href="javascript:;" >自成一格的原创设计气场女装</a><br>
+           <span class="bolder gray">销量</span> <span class="pink">125127</span>&nbsp;&nbsp;<span class="bolder gray">评分</span> <span class="pink">4.8</span>
+        </div>
+
+    </div>
+</div>
+<div class="clearfix"></div>
+<div class="title">
+    <span class="bolder size1 gray">为你精选</span> <span class="gray">为您精挑细选的宝贝</span>
+    <span class="fr triangle gray">换一批</span>
+    <hr class="hr3 fr hr5">
+
+</div>
+<div class="clearfix"></div>
+<div class="content2">
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/49.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 99.00</span><span class="like fr gray size">3234</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">2016新款夏装韩版两件套短袖中长款时尚不规则印花连衣裙套装</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/50.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 98.00</span><span class="like fr gray size">555</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">韩版商务运动钢带男士手表</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/51.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 29.80</span><span class="like fr gray size">700</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">哆啦A梦黑胶晴雨伞</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/52.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 129.00</span><span class="like fr gray size">1001</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">蓝色V领荷叶袖长款连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/53.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 69.00</span><span class="like fr gray size">528</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">家世比折叠简易衣柜简易布艺布衣柜钢管钢架收纳组装简约现代衣橱 </a>
+        </div>
+    </div>
+</div>
+<div class="content2">
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/54.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 139.00</span><span class="like fr gray size">123</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">露趾弹力网格休闲凉鞋</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/55.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 139.90</span><span class="like fr gray size">456</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">七格格小雏菊印花连衣裙</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/56.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 89.80</span><span class="like fr gray size">789</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">7格格黑白条纹露肩T恤</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/57.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 98.00</span><span class="like fr gray size">10</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">姿维雅水缤纷补水保湿套装</a>
+        </div>
+    </div>
+    <div class="cont1">
+        <a href="javascript:;"><img src="img/58.jpg" alt=""></a>
+        <div class="cont1-1">
+            <span class="price fl pink bolder size2"><span class="normal">¥</span> 169.00</span><span class="like fr gray size">11</span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="tit">
+            <a href="javascript:;">1313拼接重工牛仔短裙</a>
+        </div>
+    </div>
+</div>
+<hr class="hr">
+<div class="footer">
+    <div class="footer1">
+    <li>
+        <p class="size1 bolder">4000-800-577</p>
+        <p>美丽说客服热线</p>
+        <p>周一至周日：09:00-22:00</p>
+    </li>
+    <li>
+        <span class="size2 bolder">买家帮助</span><br>
+        <a href="javascript:;">新手指南</a><br>
+        <a href="javascript:;">服务保障</a><br>
+        <a href="javascript:;">帮助中心</a>
+    </li>
+    <li>
+        <span class="size2 bolder">商家帮助</span><br>
+        <a href="javascript:;">商家入驻</a><br>
+        <a href="javascript:;">商家推广</a><br>
+        <a href="javascript:;">帮助中心</a>
+
+    </li>
+    <li>
+        <span class="size2 bolder">关于我们</span><br>
+        <a href="javascript:;">关于美丽说</a><br>
+        <a href="javascript:;">联系我们</a><br>
+        <a href="javascript:;">加入美丽说</a>
+
+    </li>
+    <li>
+        <span class="size2 bolder">关注我们</span><br>
+        <img src="img/60.jpg" alt=""> <a href="javascript:;" class="pic3">新浪微博</a><br>
+        <img src="img/61.jpg" alt=""> <a href="javascript:;">QQ空间</a><br>
+        <img src="img/62.jpg" alt=""> <a href="javascript:;">腾讯微博</a>
+
+    </li>
+    <li>
+        <p class="bolder size2">美丽说微信服务号</p>
+        <a href="javascript:;"><img src="img/63.jpg" alt="" class="top1"></a>
+    </li>
+    <li>
+        <a href="javascript:;"><img src="img/64.jpg" alt=""></a>
+    </li>
+    </div>
+    <div class="clearfix"></div>
+    <ul class="footer2">
+        <li>友情链接:</li>
+        <li><a href="javascript:;">腾讯女性</a></li>
+        <li><a href="javascript:;">列表网</a></li>
+        <li><a href="javascript:;">太平洋女性网</a></li>
+        <li><a href="javascript:;">多宝网</a></li>
+        <li><a href="javascript:;">七丽女性网</a></li>
+        <li><a href="javascript:;">酷我音乐</a></li>
+        <li><a href="javascript:;">保葫芦</a></li>
+        <li><a href="javascript:;">中国服装品牌网</a></li>
+        <li><a href="javascript:;">优美网</a></li>
+        <li><a href="javascript:;">男士时尚</a></li>
+        <li><a href="javascript:;">哈秀时尚网</a></li>
+    </ul>
+    <div class="clearfix"></div>
+    <div class="footer3">
+        <p>
+            Copyright@2016Meilishuo.com  <a href="javascript:;">电信与信息服务业务经营许可证100798号</a> <a href="javascript:;">经营性网站备案信息</a>
+            京ICP备11031139号 京公网安备110108006045
+        </p>
+        <p>
+            客服邮箱:kf@meilishuo.com 客服电话:4000-800-577 文明办网文明上网举报电话:010-82615762 <a href="javascript:;">违法不良信息举报中心</a>
+            <a href="javascript:;">我最喜爱的人民警察评选&gt;&gt;</a><a href="javascript:;">反诈骗信息</a>
+        </p>
+    </div>
+</div>
+
+</body>
+<script>
+    var oPic11=document.getElementById('pic11');
+    var oPic12=document.getElementById('pic12');
+    oPic11.onmouseover=function(){
+        oPic11.style.display='none';
+        oPic12.style.display='block';
+    };
+    oPic12.onmouseout=function(){
+        oPic11.style.display='block';
+        oPic12.style.display='none';
+    };
+    var oPic21=document.getElementById('pic21');
+    var oPic22=document.getElementById('pic22');
+    oPic21.onmouseover=function(){
+        oPic21.style.display='none';
+        oPic22.style.display='block';
+    };
+    oPic22.onmouseout=function(){
+        oPic21.style.display='block';
+        oPic22.style.display='none';
+    }
+    var oPic31=document.getElementById('pic31');
+    var oPic32=document.getElementById('pic32');
+    oPic31.onmouseover=function(){
+        oPic31.style.display='none';
+        oPic32.style.display='block';
+    };
+    oPic32.onmouseout=function(){
+        oPic31.style.display='block';
+        oPic32.style.display='none';
+    }
+</script>
+</html>
